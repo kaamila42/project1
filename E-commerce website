@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Grade Calculation</title>
+</head>
+
+<body bgcolor= "gray">
+<form><center>
+<h1 align="center"> Grade Calculation</h1>
+<table border="2" style="height: 75%; width: 60%">
+<tr>
+<td>Students Name</td>
+<td><input type="text" size="50" maxlength="40" value="Name"</td>
+</tr>
+<tr>
+<td>Subject 1 Marks</td>
+<td><input type="text" size="30" maxlength="10" value="Sub 1"</td>
+</tr>
+<tr>
+<td>Subject 2 Marks</td>
+<td><input type="text" size="30" maxlength="10" value="Sub 2"</td>
+</tr>
+
+<tr>
+<td>Subject 3 Marks</td>
+<td><input type="text" size="30" maxlength="10" value="Sub 3"</td>
+</tr>
+
+</tr>
+<td>Subject 4 Marks</td>
+<td><input type="text" size="30" maxlength="10" value="Sub 4"</td>
+</tr>
+</form>
+<input type="sum" value="sum" oneclick="calcSum()">
+<input type="submit" value="sum">
+<script>
+    function calcSum() {
+        let Sub 1 = document.getElementsByName("num1")[0].value;
+        let Sub 2 = document.getElementsByName("num2")[0].value;
+        let Sub 3 = document.getElementsByName("num3")[0].value
+        let Sub 4 = document.getElementsByName("num4")[0].value
+        let sum = Number(num1) + Number(num2) + Number(num3) + Number(num4);
+        document.getElementsByName("sum")[0].value = sum;
+    }
+</script>
+</body>
+
+</html>
